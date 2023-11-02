@@ -1,14 +1,18 @@
-body {
+header {
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 204vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
-
-@media all and (min-width: 800px) {
+a {
+    text-decoration: none;
+}
+@media all and (max-width: 700px) {
     .button {
         height: 500px;
+        color: red;
     }
 }
 
