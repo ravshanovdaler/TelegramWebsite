@@ -1,0 +1,53 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 204vh;
+    display: flex;
+    justify-content: center;
+}
+
+@media all and (min-width: 800px) {
+    .button {
+        height: 500px;
+    }
+}
+
+.button, .qollanma {
+    position: absolute;
+    height: 70px;
+    width: 300px;
+    padding: 0.75rem 1.5rem;
+    background-color: #488aec;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    user-select: none;
+    gap: 0.75rem;
+    box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+    transition: all .6s ease;
+}
+
+.button {
+    top: 570px;
+    left: 300px;
+}
+
+.qollanma {
+    top: 450px;
+    left: 300px;
+}
+
+.button:hover, .qollanma:hover {
+    box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+}
+
+.button:focus, .qollanma:focus, .button:active, .qollanma:active {
+    opacity: .85;
+    box-shadow: none;
+}
